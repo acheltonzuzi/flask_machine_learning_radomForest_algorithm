@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação</title>
+</head>
+<body>
+    <div class="">
+        {% if result %}
+            {{result}}
+        {% endif %}
+    </div>
+    <form action="/predict" method="post">
+        <div class="">
+            <label for=""></label>
+            <input type="text" placeholder="sepal length" name="sl">
+        </div>
+        <div class="">
+            <label for=""></label>
+            <input type="text" placeholder="sepal width" name="sw">
+        </div>
+        <div class="">
+            <label for=""></label>
+            <input type="text" placeholder="petal length" name="pl">
+        </div>
+        <div class="">
+            <label for=""></label>
+            <input type="text" placeholder="petal width" name="pw">
+        </div>
+        <button>Classificar</button>
+    </form>
+</body>
+</html>
